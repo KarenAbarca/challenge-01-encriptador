@@ -1,0 +1,161 @@
+*{
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body{
+    background-color: #E6E6FA;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.logo{
+    margin-top:2rem;
+    margin-left: 2rem;
+    width: 5rem;
+}
+
+.main{
+    position: relative;
+    margin: 1rem 2rem 2rem 2rem;
+}
+
+.section-encriptar, .section-resultado{
+    padding: 1rem;
+    text-align: center;
+}
+
+.section-encriptar{
+    height: auto;
+    width: 70%;
+}
+
+.input-texto, .output-texto{
+    width: 100%;
+    margin-bottom: 2rem;
+    height: 28rem;
+    font-size: 1.5rem;
+    resize: none;
+    border: none;
+    background-color: transparent;
+}:focus{
+    border: none;
+    outline: none;
+}
+
+.alerta{
+    line-height: 1rem;
+    font-size: 0.8rem;
+    margin-bottom: 0.5rem;
+    color: black;
+}
+
+.img-alerta{
+    width: 0.8rem;    
+}
+
+.botones{
+    position: relative;
+    bottom: 0;
+}
+
+.boton{
+    padding: 1.2rem;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 30px;
+    width: 40%;
+    transition: 1s background;
+}
+
+.boton:hover{
+    cursor: pointer;
+    opacity: 60%;
+}
+
+.encriptar{
+    margin-right: 2rem;  
+    background-color: #4B0082;
+    color: white;
+}
+
+.desencriptar{
+    background-color: #D8BFD8;
+    color: black;
+}
+
+.section-resultado{
+    position: absolute;
+    top:0rem;
+    right: 2rem;
+    background-color: white;
+    height: 100%;
+    width: 30%;
+    border-radius: 15px;
+}
+
+.div-temporal h2{
+    font-size: 20px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.div-temporal h3{
+    font-size: 14px;
+}
+
+.img-resultado{
+    width: 60%;
+    margin-top: 6rem;
+}
+
+.form-output{
+    display: none;
+}
+
+.copiar{
+    margin-top: 1.5rem;
+    width: 80%;
+    background-color: #C3B1E1;
+    color: black;
+}
+
+footer{
+    margin-top: 4rem;
+    padding: 1rem;
+    background: purple;
+    text-align: center;
+    color: white;
+}
+
+
+
+@media screen and (max-width: 1223px){ 
+
+    .section-encriptar, .section-resultado{
+        width: 100%;
+    }
+    
+    .boton{
+        width: 40%;
+        margin-bottom: 1rem;
+    }
+    
+    .section-resultado{
+        position: relative;
+        top: 2rem;
+        right: 0;
+        margin: 0;
+    }
+
+    .img-resultado{
+        display: none;
+    }
+}
+
+
+@media screen and (max-width: 480px){ 
+
+    .boton{
+        width: 100%;
+    }
+}

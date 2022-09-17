@@ -1,0 +1,190 @@
+body{
+    background-color: #E6E6FA;
+    font-family: 'Montserrat', sans-serif;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.logo{
+    margin-left: 20px;
+    width: 100px;
+}
+
+main{
+    display: flex;
+    margin: 0 40px;
+    height: 100%;
+}
+
+.section-encriptar{
+    width: 70%;
+    padding: 10px;
+    text-align: center;
+    height: 450px;
+}
+
+.input-texto, .output-texto{
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    font-family: inherit;
+    font-size: 20px;
+    background-color: transparent;
+    border: none;
+    resize: none; 
+}
+
+.input-texto{
+    margin-bottom: 20px;
+    height: 400px;
+}
+
+.input-texto:focus{
+    border: none;
+    outline: none;
+}
+
+.img-alerta{
+    width: 10px;
+}
+
+label{
+    font-size: 12px;
+}
+
+.botones{
+    margin: 0 auto;
+    bottom: 0px;
+}
+
+.boton{
+    font-family: inherit;
+    padding: 15px 0;
+    width: 250px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 10px;
+    font-size: 15px;
+}
+
+.boton:hover{
+    cursor: pointer;
+    opacity: 80%;
+}
+
+.encriptar{
+    background-color: #4B0082;
+    color: white;
+    margin-right: 20px;
+}
+.desencriptar{
+    background-color: #D8BFD8;
+}
+
+.section-resultado{
+    position: absolute;
+    top:20px;
+    right: 40px;
+    width: 22%;
+    background-color: white;
+    border-radius: 30px;
+    padding: 10px;
+    text-align: center;
+    height: 540px;
+}
+
+.img-resultado{
+    width: 80%;
+    padding-top: 5rem;
+    margin-bottom: 10px;
+}
+
+.div-temporal{
+    vertical-align: middle;
+}
+.div-temporal h2{
+    font-size: 20px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.div-temporal h3{
+    font-size: 14px;
+}
+
+.form-output{
+    display: none;
+}
+
+.output-texto{
+    margin-bottom: 40px;
+    height: 440px;
+    border: none;
+}
+.output-texto:focus{
+    border: none;
+    outline: none;
+}
+
+.copiar{
+    background-color: #C3B1E1;
+}
+
+.footer{
+    padding: 10px;
+    background: purple;text-align: center;
+    color: white;
+}
+
+
+@media only screen and (min-width: 481px) and (max-width: 1223px){ 
+    .section-encriptar{
+        width: 100%;
+    }
+    
+    .boton{
+        width: 45%;
+    }
+
+    .section-resultado{
+        width: calc(100% - 5em);
+        top: 40rem;
+        left: 2rem;
+        height: auto;
+    }
+    
+    .output-texto{
+        height: 5rem;
+    }
+    
+    .img-resultado{
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 480px){ 
+    .section-encriptar{
+        width: 100%;
+    }
+    
+    .boton{
+        width: 100%;
+    }
+    .encriptar{
+        margin-right: 0;
+    }
+    .section-resultado{
+        width: calc(100% - 5em);
+        top: 42rem;
+        left: 2rem;
+        height: auto;
+    }
+    
+    .output-texto{
+        height: 10rem;
+    }
+    
+    .img-resultado{
+        display: none;
+    }
+}
